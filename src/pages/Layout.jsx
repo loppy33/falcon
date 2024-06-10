@@ -8,7 +8,7 @@ const Layout = () => {
     return (
         <>
             <div className="container">
-                {account.status !== "connected" ?
+                {account.status === "connected" ?
 
                     <>
                         <header>
