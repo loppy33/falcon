@@ -1,0 +1,330 @@
+.noConnected
+    .main__button
+        padding: 24px 62px
+        background: linear-gradient(128deg, rgba(62,208,255,1) 0%, rgba(124,245,255,1) 58%, rgba(98,232,251,1) 100%)
+        font-size: 20px
+        color: #040D32
+        border-radius: 100px
+        font-weight: 800
+
+
+    .action_button
+        position: relative
+        color: #fff
+        overflow: hidden
+        border-radius: 100px
+        padding: 16px 32px
+        font-size: 14px
+        background: linear-gradient(128deg, rgba(62,208,255,1) 0%, rgba(124,245,255,1) 58%, rgba(98,232,251,1) 100%)
+        font-weight: 800
+        z-index: 1
+
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: -1
+            background-color: #060707e0
+    section
+        height: 100vh
+        width: 100vw
+
+        img
+            width: 100px
+
+        h1
+            font-size: 64px
+            font-weight: 400
+
+        .main__p
+            font-size: 32px
+            font-weight: 300
+
+        h2
+            font-weight: 300
+            font-size: 38px
+
+        h3
+            font-size: 32px
+            font-weight: 300
+            // TODO GRAIENT 
+            background: #2FC6FF
+            background: linear-gradient(to right, #2FC6FF 0%, #82F9FF 41%, #0870A3 98%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+        p
+            font-weight: 300
+
+            font-size: 20px
+
+        h4
+            font-weight: 300
+            font-size: 32px
+
+        h5
+            font-size: 32px
+            font-weight: 800
+
+    .block1
+        position: relative
+        overflow: hidden
+
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: -1
+            background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)
+
+        .container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            gap: 4rem
+            height: 100%
+
+        video
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+            width: 100%
+            transform: scale(1.2)
+            height: 100%
+
+    .bg-1
+        position: relative
+        overflow: hidden
+
+        video
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -2
+            width: 100%
+            height: 100%
+            transform: rotate(90deg) scale(2)
+
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #00000070
+            z-index: -1
+
+    .bg-2
+        background-color: #000
+
+    .block2
+        display: flex
+        justify-content: space-between
+
+        .images
+            width: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                width: 288px
+                height: 312px
+                margin-top: 1rem
+
+            .second
+                margin-top: 5vh
+
+        .about
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 3rem
+
+    .block3
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 3rem
+
+        img
+            width: 50%
+
+        .mission
+            display: flex
+            flex-direction: column
+            gap: 3rem
+
+    .block4
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        h2, h3
+            text-align: center
+
+        .services
+            display: flex
+            justify-content: space-between
+            gap: 20px
+
+            .service
+                background: linear-gradient(16deg, rgba(25,31,49,0.16) 0%, rgba(13,62,93,0.16) 100%)
+                width: calc( 100% / 3 - 20px )
+                text-align: center
+                border-radius: 16px
+                padding: 42px
+
+                img
+                    width: 140px
+
+                h4
+                    margin: 1rem 0
+
+                p
+                    font-size: 18px
+
+        .who
+            background-color: #13132438
+            border: 1px solid #C1FCFC08
+            border-radius: 16px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 42px
+
+    .block5
+        text-align: left
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 2rem
+
+        .title
+            margin-bottom: 2rem
+
+        .exp
+            background: linear-gradient(90deg, rgba(27,24,24,1) 0%, rgba(34,34,34,1) 100%)
+            display: flex
+            align-items: center
+            padding: 42px
+            gap: 2rem
+
+            img
+                width: 170px
+
+    .block6
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+
+        .join
+            position: relative
+            overflow: hidden
+            padding: 92px
+            z-index: 1
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2rem
+            background-color: red
+
+            video
+                position: absolute
+                top: 0
+                left: 0
+                z-index: -2
+                height: 100%
+                width: 100%
+                transform: scale(1.65)
+
+            &::after
+
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: #00000036
+                z-index: -1
+
+    .block7
+        text-align: center
+        display: flex
+        flex-direction: column
+        gap: 5rem
+
+        form
+            input, textarea
+                background-color: transparent
+                border: none
+                border-bottom: 1px solid #FFFFFF16
+                border-radius: 0px
+
+                margin: 2rem
+                font-size: 16px
+                font-family: Nunito Sans
+                resize: none
+                outline: none
+                width: 25%
+                font-weight: 300
+
+                &::placeholder
+                    color: #fff
+
+            textarea
+                width: calc( 50% + 4rem )
+
+            button
+                display: block
+                margin: auto
+
+        .links
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+            .link
+                background: linear-gradient(120deg, rgba(27,24,24,1) 0%, rgba(34,34,34,1) 100%)
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 32px 24px
+                gap: 2rem
+                width: calc( 100% / 4 - 2rem )
+
+                img
+                    width: 42px
+
+                span
+                    font-size: 16px
+
+                a
+                    font-size: 14px
+                    color: #26BDFE
+                    border-bottom: 1px solid #26BDFE
+                    padding-bottom: .25rem
+
+        .mini-footer
+            margin: 4rem 0
+
+            display: flex
+            justify-content: space-between
+            font-size: 14px
+            .links
+                display: flex
+                gap: 4rem
+                a
+                    color: #FFFFFF
