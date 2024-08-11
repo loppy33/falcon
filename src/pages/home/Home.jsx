@@ -143,7 +143,7 @@ export default function Home() {
                 <input type="email" placeholder='E-Mail' />
               </div>
               <textarea data-aos="zoom-in" name="Message" id="message" placeholder='Message' rows={6}></textarea>
-              <button className='action_button'>Send</button>
+              <button className='action__button'>Send</button>
             </form>
 
             <div className='links'>

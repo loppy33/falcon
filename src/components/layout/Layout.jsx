@@ -53,7 +53,10 @@ const Layout = () => {
                                         <li><a href="#our_services">Our Services</a></li>
                                         <li><a href="#experienced_team">Experienced Team</a></li>
                                         <li><a href="#join_us">Join Us</a></li>
-                                        <w3m-button  />
+                                        <button className="action__button">
+                                            Log in
+                                            <w3m-button />
+                                        </button>
                                     </ul>
                                 </nav>
                             </div>
