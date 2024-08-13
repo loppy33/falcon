@@ -45,8 +45,8 @@ export default function Home() {
 
             <div className='about' data-aos="fade-left" >
               <h2>About Us</h2>
-              <h3>Fenom: Your Guide in the World of Cryptocurrencies</h3>
-              <p>At Fenom, we strive to create innovative solutions for the investment community, offering transparent, reliable, and highly efficient cryptocurrency products. <br /><br /> Our goal is to help you effectively manage your digital assets and achieve your financial objectives.</p>
+              <h3>Fenom: Your Partner in the Cryptocurrency World</h3>
+              <p>At Fenom, we are dedicated to developing cutting-edge solutions for the investment community, providing transparent, trustworthy, and highly effective cryptocurrency products. <br /> <br />Our mission is to empower you to manage your digital assets efficiently and reach your financial goals. </p>
             </div>
 
           </section>
@@ -54,8 +54,8 @@ export default function Home() {
           <section id='our_mission' className='block3 container'>
             <div className='mission' data-aos="fade-down">
               <h2>Our Mission</h2>
-              <h3>Access to the Digital Future</h3>
-              <p>We believe in the power of blockchain technology and cryptocurrencies to transform the global economy. <br /> <br />  Our mission is to provide investors with access to the best opportunities in the world of digital assets, ensuring security, transparency, and high returns.</p>
+              <h3>Embracing the Digital Future</h3>
+              <p>We are convinced that blockchain technology and cryptocurrencies hold the potential to revolutionize the global economy. <br /> <br /> Our mission is to connect investors with top opportunities in the digital asset space, while prioritizing security, transparency, and maximizing returns.</p>
             </div>
             <img src="images/home/mission.png" data-aos="zoom-in" alt="" />
           </section>
@@ -150,12 +150,12 @@ export default function Home() {
               <div className='link' data-aos="flip-left" data-aos-duration="1000">
                 <img src="images/net/facebook.png" alt="" />
                 <span>Facebook</span>
-                <a href="Visit">Visit</a>
+                <a target="_blank" href="Visit">Visit</a>
               </div>
               <div className='link' data-aos="flip-left" data-aos-duration="1500">
                 <img src="images/net/twitter.png" alt="" />
                 <span>Twitter</span>
-                <a href="Visit">Visit</a>
+                <a target="_blank" href="https://x.com/Fenom_project">Visit</a>
               </div>
               <div className='link' data-aos="flip-left" data-aos-duration="2000">
                 <img src="images/net/youtube.png" alt="" />
