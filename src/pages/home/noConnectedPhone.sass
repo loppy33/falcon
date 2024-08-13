@@ -1,0 +1,320 @@
+@media ( max-width: 720px )
+    
+    .noConnected
+        .main__button
+            padding: 3vw 8vw
+            background: linear-gradient(128deg, rgba(62,208,255,1) 0%, rgba(124,245,255,1) 58%, rgba(98,232,251,1) 100%)
+            font-size: 6vw
+            color: #040D32
+            border-radius: 10vw
+            font-weight: 800
+
+        section
+            height: 100vh
+            width: 100vw
+
+            img
+                width: 5vw
+
+            h1
+                font-size: 14vw
+                font-weight: 400
+
+            .main__p
+                font-size: 5vw
+                font-weight: 300
+
+            h2
+                font-weight: 300
+                font-size: 8vw
+
+            h3
+                font-size: 6vw
+                font-weight: 300
+                // TODO GRAIENT 
+                background: #2FC6FF
+                background: linear-gradient(to right, #2FC6FF 0%, #82F9FF 41%, #0870A3 98%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+
+            p
+                font-weight: 300
+                font-size: 4vw
+
+            h4
+                font-weight: 200
+                font-size: 10vw
+
+            h5
+                font-size: 6vw
+                font-weight: 800
+
+        .block1
+            position: relative
+            overflow: hidden
+
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: -1
+                background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%)
+
+            .container
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                gap: 4vw
+                height: 100%
+
+            video
+                position: absolute
+                top: 0
+                left: 0
+                z-index: -1
+                transform: scale(1.2)
+                height: 100vh
+
+        .bg-1
+            position: relative
+            overflow: hidden
+
+            video
+                position: absolute
+                top: 0
+                left: 0
+                z-index: -2
+                height: 300vw
+                transform: rotate(90deg) scale(2.5)
+
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: #00000070
+                z-index: -1
+
+        .bg-2
+            background-color: #000
+
+        .block2
+            display: flex
+            justify-content: center
+            // align-items: center
+            flex-direction: column
+
+            .images
+                margin: auto
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 1rem
+                img
+                    width: 38.4vw
+                    height: 41.2vw
+                    margin-top: 1vw
+
+                .second
+                    margin-top: 10vw
+
+            .about
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                gap: 2vw
+
+        .block3
+            display: flex
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+            gap: 2vw
+
+            img
+                width: 100%
+
+            .mission
+                display: flex
+                flex-direction: column
+                gap: 2vw
+
+        .block4
+            padding: 2.5rem 0
+            height: auto
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            
+            h2, h3
+                text-align: center
+                margin-bottom: 1rem
+
+            .services
+                display: flex
+                justify-content: space-between
+                flex-direction: column
+                align-items: center
+                gap: 10vw
+
+                .service
+                    background: linear-gradient(16deg, rgba(25,31,49,0.16) 0%, rgba(13,62,93,0.16) 100%)
+                    width: 100%
+                    text-align: center
+                    border-radius: .8vw
+                    padding: 6vw
+
+                    img
+                        width: 20vw
+
+                    h4
+                        margin: 1vw 0
+
+                    p
+                        font-size: 4vw
+
+            .who
+                margin-top: 2rem
+                background-color: #13132438
+                border: 1px solid #C1FCFC08
+                border-radius: .8vw
+                display: flex
+                flex-direction: column
+                text-align: center
+                justify-content: space-between
+                align-items: center
+                padding: 4.1vw
+
+        .block5
+            text-align: left
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 2vw
+
+            .title
+                margin-bottom: 1.5vw
+
+            .exp
+                background: linear-gradient(90deg, rgba(27,24,24,1) 0%, rgba(34,34,34,1) 100%)
+                display: flex
+                align-items: center
+                padding: 4.1vw
+                gap: 1.5vw
+
+                img
+                    width: 8.5vw
+
+        .block6
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+
+            .join
+                position: relative
+                overflow: hidden
+                padding: 9.1vw
+                z-index: 1
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 1.5vw
+
+                video
+                    position: absolute
+                    top: 0
+                    left: 0
+                    z-index: -2
+                    height: 100%
+                    width: 100%
+                    transform: scale(1.65)
+
+                &::after
+
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background-color: #00000036
+                    z-index: -1
+
+        .block7
+            text-align: center
+            display: flex
+            flex-direction: column
+            gap: 3.5vw
+
+            form
+                input, textarea
+                    background-color: transparent
+                    border: none
+                    border-bottom: 1px solid #FFFFFF16
+                    border-radius: 0px
+
+                    margin: 2vw
+                    font-size: .8vw
+                    font-family: Nunito Sans
+                    resize: none
+                    outline: none
+                    width: 25%
+                    font-weight: 300
+
+                    &::placeholder
+                        color: #fff
+
+                textarea
+                    width: calc( 50% + 3vw )
+
+                button
+                    display: block
+                    margin: auto
+
+            .links
+                display: flex
+                align-items: center
+                justify-content: space-between
+
+                .link
+                    background: linear-gradient(120deg, rgba(27,24,24,1) 0%, rgba(34,34,34,1) 100%)
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    padding: 1.5vw 2.2vw
+                    gap: 1.5vw
+                    width: calc( 100% / 4 - 1.5vw )
+
+                    img
+                        width: 4.1vw
+
+                    span
+                        font-size: .8vw
+
+                    a
+                        font-size: .7vw
+                        color: #26BDFE
+                        border-bottom: 1px solid #26BDFE
+                        padding-bottom: .1.5vw
+
+            .mini-footer
+                margin: 3vw 0
+
+                display: flex
+                justify-content: space-between
+                font-size: .7vw
+                .links
+                    display: flex
+                    gap: 2.5vw
+                    a
+                        color: #FFFFFF

@@ -31,9 +31,7 @@ createWeb3Modal({
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <WagmiProvider config={wagmiConfig}>
       <App />
     </WagmiProvider>
-  </React.StrictMode>,
 )

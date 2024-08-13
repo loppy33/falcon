@@ -1,5 +1,6 @@
 import { useAccount } from 'wagmi'
 import './noConnected.sass'
+import './noConnectedPhone.sass'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

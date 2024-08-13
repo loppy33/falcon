@@ -1,5 +1,6 @@
 import { Outlet, Link, useLocation, Navigate } from "react-router-dom";
 import './Layout.sass'
+import './phone.sass'
 import { useAccount } from 'wagmi'
 
 import { FaHome } from "react-icons/fa";
@@ -9,10 +10,18 @@ import { FaGraduationCap } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdContactSupport } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 const Layout = () => {
     const account = useAccount();
     const location = useLocation();
+
+    const [menu, setMenu] = useState(false);
+
+    useEffect(() => {
+        console.log(menu);
+
+    }, [menu])
 
     const isActive = (path) => location.pathname === path;
 
@@ -43,7 +52,7 @@ const Layout = () => {
                 {account.status !== "connected" ?
 
                     <>
-                        <header>
+                        <header className={menu && 'active'}>
                             <div className="container">
                                 <a href="#greetings"><img src="images/icons/logo.svg" alt="" /></a>
                                 <nav>
@@ -59,6 +68,9 @@ const Layout = () => {
                                         </button>
                                     </ul>
                                 </nav>
+                                <div className="menu" onClick={() => setMenu(!menu)}>
+                                    <span></span>
+                                </div>
                             </div>
                         </header>
 
