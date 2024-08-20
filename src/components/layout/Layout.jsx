@@ -57,11 +57,11 @@ const Layout = () => {
                                 <a href="#greetings"><img src="images/icons/logo.svg" alt="" /></a>
                                 <nav>
                                     <ul>
-                                        <li><a href="#about_us">About Us</a></li>
-                                        <li><a href="#our_mission">Our Mission</a></li>
-                                        <li><a href="#our_services">Our Services</a></li>
-                                        <li><a href="#experienced_team">Experienced Team</a></li>
-                                        <li><a href="#join_us">Join Us</a></li>
+                                        <li><a onClick={() => setMenu(false)} href="#about_us">About Us</a></li>
+                                        <li><a onClick={() => setMenu(false)} href="#our_mission">Our Mission</a></li>
+                                        <li><a onClick={() => setMenu(false)} href="#our_services">Our Services</a></li>
+                                        <li><a onClick={() => setMenu(false)} href="#experienced_team">Experienced Team</a></li>
+                                        <li><a onClick={() => setMenu(false)} href="#join_us">Join Us</a></li>
                                         <button className="action__button">
                                             Log in
                                             <w3m-button />
