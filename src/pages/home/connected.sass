@@ -1,0 +1,125 @@
+@import '../../styles/colors.modules'
+.pageContainer
+    .section__name
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .user__info
+        display: flex
+        gap: 20px
+
+        .content
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 20px
+
+            .title
+                display: flex
+                align-items: center
+                justify-content: space-between
+                div
+                    display: flex
+                    align-items: center
+                    gap: 20px
+
+            .info
+                display: flex
+                justify-content: space-between
+
+                .balance
+                    font-size: 24px
+    .launchpad
+        table
+            width: 100%
+            display: flex
+            flex-direction: column
+            gap: 30px
+            .avatar
+                width: 42px
+                height: 42px
+                object-fit: cover
+                border-radius: 50%
+
+            .line
+                display: block
+                width: 124px
+                height: 8px
+                border-radius: 8px
+                background-color: $grayColor
+                position: relative
+
+                .lineContent
+                    position: absolute
+                    background: linear-gradient(90deg, rgba(130,249,255,1) 0%, rgba(17,239,196,1) 100%)
+                    border-radius: 8px
+
+                    height: 100%
+
+            tr
+                display: flex
+                justify-content: space-between
+                align-items: center
+                td
+                    &:first-child
+                        width: 40%
+                    div
+                        display: flex
+                        align-items: center
+                        gap: 20px
+
+    .academy
+        display: flex
+        flex-wrap: wrap
+        gap: 65px
+        width: 100%
+        margin-bottom: 24px
+
+        a
+            display: flex
+            flex-direction: column
+            width: calc( 100% / 3 - (65px / 1.5) )
+            position: relative
+
+            img
+                width: 100%
+                height: fit-content
+                object-fit: cover
+
+            .content
+                margin-bottom: 0
+
+                .info
+                    font-size: 12px
+                    color: $secondColor
+                p
+                    color: $mainColor
+                    font-size: 16px
+    .networks
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 24px
+
+        .net
+            background: $bgContentColor
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 1.5vw 2.2vw
+            gap: 1.5vw
+            width: calc( 100% / 4 - 1.5vw )
+
+            img
+                width: 4.1vw
+
+                span
+                    font-size: .8vw
+
+                a
+                    font-size: .7vw
+                    color: #26BDFE
+                    border-bottom: 1px solid #26BDFE
+                    padding-bottom: .1.5vw

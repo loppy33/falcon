@@ -1,6 +1,4 @@
-
-.action
-    background-color: red
+@import '../../styles/colors.modules'
 
 .Layout
     display: flex
@@ -9,7 +7,7 @@
         position: fixed
         z-index: 100
         width: 100%
-        .container
+        .home__container
             display: flex
             align-items: center
             justify-content: space-between
@@ -20,7 +18,8 @@
 
             nav
                 display: flex
-                justify-content: center
+                justify-content: flex-end
+                width: 100%
 
                 ul
                     display: flex
@@ -38,18 +37,17 @@
                 button
                     position: relative
 
-                    w3m-button
-                        position: absolute
-                        top: 0
-                        left: 0
-                        width: 100%
-                        height: 100%
-                        opacity: 0
-
+                w3m-button
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    opacity: 0
 
     .sidebar
         background-color: #1a1a1a
-        width: 20%
+        width: 300px
         height: 100vh
         padding: 30px
 
@@ -78,17 +76,26 @@
                     svg
                         font-size: 20px
 
-    .info
-        .container
+    .user
+        background-color: $bgContentColor
+        margin-bottom: 24px
+
+        .pageContainer
             width: 100%
             display: flex
             justify-content: space-between
-            padding: 20px 0
+            align-items: center
             font-weight: 600
             font-size: 20px
+            padding: 12px 0
 
-            span
-                color: #ccc
+            div
+                display: flex
+                align-items: center
+                gap: 20px
+
+                .icons
+                    cursor: pointer
 
     main
         width: 100%

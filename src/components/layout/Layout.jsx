@@ -25,26 +25,26 @@ const Layout = () => {
 
     const isActive = (path) => location.pathname === path;
 
-    const getPageName = (pathname) => {
-        switch (pathname) {
-            case "/":
-                return "Home";
-            case "/profile":
-                return "Profile";
-            case "/myprojects":
-                return "My Projects";
-            case "/myeducation":
-                return "My Education";
-            case "/mystructure":
-                return "My Structure";
-            case "/wallets":
-                return "Wallets";
-            case "/support":
-                return "Support";
-            default:
-                return "Home";
-        }
-    };
+    // const getPageName = (pathname) => {
+    //     switch (pathname) {
+    //         case "/":
+    //             return "Home";
+    //         case "/profile":
+    //             return "Profile";
+    //         case "/myprojects":
+    //             return "My Projects";
+    //         case "/myeducation":
+    //             return "My Education";
+    //         case "/mystructure":
+    //             return "My Structure";
+    //         case "/wallets":
+    //             return "Wallets";
+    //         case "/support":
+    //             return "Support";
+    //         default:
+    //             return "Home";
+    //     }
+    // };
 
     return (
         <>
@@ -53,7 +53,7 @@ const Layout = () => {
 
                     <>
                         <header className={menu && 'active'}>
-                            <div className="container">
+                            <div className="home__container">
                                 <a href="#greetings"><img src="images/icons/logo.svg" alt="" /></a>
                                 <nav>
                                     <ul>
@@ -91,10 +91,15 @@ const Layout = () => {
                 <main>
                     {account.status === "connected" ?
                         <>
-                            <div className="info">
-                                <div className="container">
-                                    <span>{getPageName(location.pathname)}</span>
-                                    <w3m-button />
+                            <div className="user">
+                                <div className="pageContainer">
+                                    {/* <span>{getPageName(location.pathname)}</span> */}
+                                    <Link className="btn__active" to="/wallets"><img className="icons" src="images/icons/wallet.svg" alt="" />Wallet</Link>
+                                    
+                                    <div>
+                                        <img className="icons" src="images/icons/lang.svg" alt="" />
+                                        <w3m-button />
+                                    </div>
                                 </div>
                             </div>
                         </>

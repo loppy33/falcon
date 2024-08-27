@@ -1,9 +1,11 @@
 import { useAccount } from 'wagmi'
+import './connected.sass'
 import './noConnected.sass'
 import './noConnectedPhone.sass'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 export default function Home() {
 
   const account = useAccount()
@@ -24,7 +26,7 @@ export default function Home() {
 
           <div className="container">
             <h1 data-aos="fade-up">Low fees, <br /> high perfomance</h1>
-            <p data-aos="fade-up"  data-aos-duration="1500"  className='main__p'>Join the New Era of VC Investing in High-Quality Early-Stage Projects. <br /> Become a Member of Our Community</p>
+            <p data-aos="fade-up" data-aos-duration="1500" className='main__p'>Join the New Era of VC Investing in High-Quality Early-Stage Projects. <br /> Become a Member of Our Community</p>
             <button data-aos="fade-up" data-aos-duration="3000" className='main__button'>Start Investing</button>
           </div>
 
@@ -32,15 +34,15 @@ export default function Home() {
 
         <div className="bg-1">
           <video src="images/home/bg/1.mp4" muted autoPlay loop playsInline></video>
-          <section id='about_us' className='block2 container'>
+          <section id='about_us' className='block2 home__container'>
             <div className='images'>
               <div>
-                <img data-aos="flip-right" data-aos-duration="1500"  src="images/home/ab1.png" alt="" />
-                <img data-aos="flip-left" data-aos-duration="3000" src="images/home/ab3.png" alt="" />
+                <img data-aos="flip-right" data-aos-duration="1500" src="images/home/ab1.png" alt="" />
+                <img data-aos-duration="3000" src="images/home/ab3.png" alt="" />
               </div>
               <div className='second'>
-                <img data-aos="flip-right" data-aos-duration="1500"  src="images/home/ab2.png" alt="" />
-                <img data-aos="flip-left" data-aos-duration="3000"  src="images/home/ab4.png" alt="" />
+                <img data-aos="flip-right" data-aos-duration="1500" src="images/home/ab2.png" alt="" />
+                <img data-aos-duration="3000" src="images/home/ab4.png" alt="" />
               </div>
             </div>
 
@@ -52,7 +54,7 @@ export default function Home() {
 
           </section>
 
-          <section id='our_mission' className='block3 container'>
+          <section id='our_mission' className='block3 home__container'>
             <div className='mission' data-aos="fade-down">
               <h2>Our Mission</h2>
               <h3>Embracing the Digital Future</h3>
@@ -61,7 +63,7 @@ export default function Home() {
             <img src="images/home/mission.png" data-aos="zoom-in" alt="" />
           </section>
 
-          <section id='our_services' className='block4 container'>
+          <section id='our_services' className='block4 home__container'>
             <div className="title">
               <h2>Our Services</h2>
               <h3>Comprehensive Crypto Solutions</h3>
@@ -99,13 +101,13 @@ export default function Home() {
         </div>
 
         <div className="bg-2">
-          <section id='experienced_team' className='block5 container'>
+          <section id='experienced_team' className='block5 home__container'>
             <div className="title">
               <h2>Experienced Team:</h2>
               <h3>Our specialists have many years of experience in finance and cryptocurrencies.</h3>
             </div>
 
-            <div data-aos="fade-right" data-aos-duration="2000" className='exp'>
+            <div data-aos="fade-right" className='exp'>
               <img src="images/home/innov.png" alt="" />
               <div>
                 <h4>Innovative Approaches</h4>
@@ -122,7 +124,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id='join_us' className='block6 container'>
+          <section id='join_us' className='block6 home__container'>
             <div className="join" data-aos="zoom-in-up">
               <video src="images/home/bg/2.webm" muted autoPlay loop playsInline></video>
 
@@ -135,7 +137,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='block7 container'>
+          <section className='block7 home__container'>
 
             <h2>Join & Follow the Community</h2>
             <form action="post">
@@ -148,22 +150,22 @@ export default function Home() {
             </form>
 
             <div className='links'>
-              <div className='link' data-aos="flip-left" data-aos-duration="1000">
+              <div className='link' data-aos-duration="1000">
                 <img src="images/net/facebook.png" alt="" />
                 <span>Facebook</span>
                 <a target="_blank" href="Visit">Visit</a>
               </div>
-              <div className='link' data-aos="flip-left" data-aos-duration="1500">
+              <div className='link' data-aos-duration="1500">
                 <img src="images/net/twitter.png" alt="" />
                 <span>Twitter</span>
                 <a target="_blank" href="https://x.com/Fenom_project">Visit</a>
               </div>
-              <div className='link' data-aos="flip-left" data-aos-duration="2000">
+              <div className='link' >
                 <img src="images/net/youtube.png" alt="" />
                 <span>Youtube</span>
                 <a href="Visit">Visit</a>
               </div>
-              <div className='link' data-aos="flip-left" data-aos-duration="2500">
+              <div className='link' data-aos-duration="2500">
                 <img src="images/net/telegram.png" alt="" />
                 <span>Telegram</span>
                 <a href="Visit">Visit</a>
@@ -196,7 +198,100 @@ export default function Home() {
           </>
           :
           <>
-            <h1>Home for connected user</h1>
+            <div className="pageContainer">
+              <div className="user__info">
+
+                <div className="content">
+                  <div className='title'>
+                    <div><span className='btn__active icon'><img className='icons' src="images/icons/license.svg" alt="" /></span> Your License </div>
+                    <span className='not__active'>Not active</span>
+                  </div>
+                  <div className='info'>
+                    <div><span className='second'>Limit</span> $ 0 </div>
+                    <div>
+                      <Link className='link' to="/wallets">Pay now</Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="content">
+                  <div className='title'>
+                    <div><span className='btn__active icon'><img className='icons' src="images/icons/balance.svg" alt="" /></span> Your License </div>
+                  </div>
+                  <div className='info'>
+                    <div className='balance'> $ 5000 </div>
+                    <div>
+                      <Link className='link' to="/wallets">Top up now</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>Launchpad</h2>
+              <div className="launchpad">
+                <table className="content">
+                  <tr>
+                    <td><div><img className='avatar' src="images/temp.png" alt="" /> Values Network</div></td>
+                    <td><div><span className='line'> <span style={{ width: 74.6 + '%' }} className='lineContent'></span> </span> 74.6%</div></td>
+                    <td>$ 60001</td>
+                    <td>$ 0.0288</td>
+                    <td><div className="arrow">
+                      <img src="images/icons/arrow-left.svg" alt="" />
+                    </div></td>
+                  </tr>
+                </table>
+              </div>
+
+              <h2 className='section__name'>Academy <a className='link' href="">Show More</a></h2>
+              <div className='academy'>
+                <a href="#/">
+                  <img src="images/temp.png" alt="" />
+                  <div className="content">
+                    <div className="info">Portfolio · 05.08.2024</div>
+                    <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
+                  </div>
+                </a>
+                <a href="#/">
+                  <img src="images/temp.png" alt="" />
+                  <div className="content">
+                    <div className="info">Portfolio · 05.08.2024</div>
+                    <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
+                  </div>
+                </a>
+                <a href="#/">
+                  <img src="images/temp.png" alt="" />
+                  <div className="content">
+                    <div className="info">Portfolio · 05.08.2024</div>
+                    <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
+                  </div>
+                </a>
+
+              </div>
+
+              <h2>Our social networks</h2>
+              <div className='networks'>
+                <div className='net'>
+                  <img src="images/net/facebook.png" alt="" />
+                  <span>Facebook</span>
+                  <a className='link' target="_blank" href="Visit">Join now</a>
+                </div>
+                <div className='net'>
+                  <img src="images/net/twitter.png" alt="" />
+                  <span>Twitter</span>
+                  <a className='link' target="_blank" href="https://x.com/Fenom_project">Join now</a>
+                </div>
+                <div className='net' >
+                  <img src="images/net/youtube.png" alt="" />
+                  <span>Youtube</span>
+                  <a className='link' href="Visit">Join now</a>
+                </div>
+                <div className='net'>
+                  <img src="images/net/telegram.png" alt="" />
+                  <span>Telegram</span>
+                  <a className='link' href="Visit">Join now</a>
+                </div>
+              </div>
+            </div>
           </>
 
       }

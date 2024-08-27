@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap')
-
+@import 'colors.modules'
 *
   margin: 0
   padding: 0
@@ -8,11 +8,11 @@
 :root
   font-family: Nunito Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
   line-height: 1.5
-  font-weight: 400
+  font-weight: 650
 
   color-scheme: light dark
-  color: rgba(255, 255, 255, 0.87)
-  background-color: #242424
+  color: $mainColor
+  background-color: $bgColor
 
   font-synthesis: none
   text-rendering: optimizeLegibility
@@ -24,11 +24,7 @@ body
 
 a
   font-weight: 500
-  color: #646cff
   text-decoration: inherit
-
-a:hover
-  color: #535bf2
 
 h1
   font-size: 3.2em
@@ -52,13 +48,18 @@ button:focus,
 button:focus-visible
   outline: 4px auto -webkit-focus-ring-color
 
-.container
+.home__container
   max-width: 70%
   margin: auto
 
 .pageContainer
-  max-width: 70%
+  max-width: 95% 
   margin: auto
+
+main
+  height: 100vh
+  overflow: scroll
+  overflow-x: hidden
 
 label
   font-size: 14px
@@ -75,16 +76,57 @@ input
 ul
   list-style: none
 
-.action__button
-  position: relative
-  color: #fff
-  overflow: hidden
-  border-radius: 5vw
-  padding: .8vw 1.5vw
-  font-size: .7vw
-  background-color: #29c1fd17
-  border: 1px solid aqua
+.icons
+  width: 24px
+  height: 24px
+
+.arrow
+  width: 40px
+  height: 40px
+  padding: 10px
+  border: 2px solid #ddd
+  border-radius: 50%
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    width: 18px
+    height: 18px
+
+.btn__active
+  color: $bgContentColor
+  background-color: $mainColor
+  font-size: 14px
+  display: inline-flex
+  align-items: center
+  gap: 12px
+  padding: 12px 16px
+
+  &.icon
+    padding: 12px
+
+.content
+  background-color: $bgContentColor
+  padding: 24px
+  margin-bottom: 24px
+
+.not__active
+  color: $redColor
+  font-size: 16px
+
+.link
+  color: $mainColor
+  font-size: 14px
+  border-bottom: 1.5px solid $mainColor
+  font-weight: 700
+
+.second
+  color: $secondColor
+
+h2
+  margin-bottom: 24px
 
 @media ( max-width: 720px )
-  .container
+  .home__container
     max-width: 95%
