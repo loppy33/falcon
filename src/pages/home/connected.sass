@@ -1,10 +1,6 @@
 @import '../../styles/colors.modules'
 .pageContainer
-    .section__name
-        width: 100%
-        display: flex
-        align-items: center
-        justify-content: space-between
+
     .user__info
         display: flex
         gap: 20px
@@ -70,33 +66,7 @@
                         align-items: center
                         gap: 20px
 
-    .academy
-        display: flex
-        flex-wrap: wrap
-        gap: 65px
-        width: 100%
-        margin-bottom: 24px
-
-        a
-            display: flex
-            flex-direction: column
-            width: calc( 100% / 3 - (65px / 1.5) )
-            position: relative
-
-            img
-                width: 100%
-                height: fit-content
-                object-fit: cover
-
-            .content
-                margin-bottom: 0
-
-                .info
-                    font-size: 12px
-                    color: $secondColor
-                p
-                    color: $mainColor
-                    font-size: 16px
+    
     .networks
         display: flex
         align-items: center
@@ -114,6 +84,7 @@
 
             img
                 width: 4.1vw
+                height: 4.1vw
 
                 span
                     font-size: .8vw

@@ -7,6 +7,8 @@ import NoPage from "./pages/noPage/NoPage";
 import MyStructure from "./pages/mystructure/MyStructure";
 import Profile from "./pages/profile/Profile";
 import Wallets from "./pages/wallets/Wallets";
+import Academy from "./pages/academy/Academy";
+import Detailed from "./pages/academy/Detailed/Detailed";
 
 function App() {
 
@@ -16,7 +18,12 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+
           <Route path="/wallets" element={<PrivateRoute><Wallets /></PrivateRoute>} />
+
+          <Route path="/academy" element={<PrivateRoute><Academy /></PrivateRoute>} />
+          <Route path="/academy/:id" element={<PrivateRoute><Detailed /></PrivateRoute>} />
+
           <Route path="/mystructure" element={<PrivateRoute><MyStructure /></PrivateRoute>} />
 
           <Route path="*" element={<NoPage />} />

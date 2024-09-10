@@ -52,7 +52,7 @@ const Layout = () => {
                 {account.status !== "connected" ?
 
                     <>
-                        <header className={menu && 'active'}>
+                        <header className={menu ? 'active' : null}>
                             <div className="home__container">
                                 <a href="#greetings"><img src="images/icons/logo.svg" alt="" /></a>
                                 <nav>
@@ -76,15 +76,15 @@ const Layout = () => {
 
                     </> : <>
                         <nav className="sidebar">
-                            <Link className="title" to="/panel">Falcon</Link>
+                            <Link className="title" to="/"><img src="/images/icons/logocon.svg" alt="" /></Link>
                             <ul>
-                                <li className={isActive("/") ? "active" : ""}><Link to="/"><FaHome /> Home</Link></li>
-                                <li className={isActive("/profile") ? "active" : ""}><Link to="/profile"><FaUser />Profile</Link></li>
-                                <li className={isActive("/wallets") ? "active" : ""}><Link to="/wallets"><FaWallet />Wallets</Link></li>
+                                <li className={isActive("/") ? "active" : ""}><Link to="/"><img src="/images/icons/home.svg" alt="" /> Home</Link></li>
+                                <li className={isActive("/academy") ? "active" : ""}><Link to="/academy"><img src="/images/icons/academy.svg" alt="" /> Academy</Link></li>
+                                <li className={isActive("/wallets") ? "active" : ""}><Link to="/wallets"><img src="/images/icons/launchpad.svg" alt="" /> Wallets</Link></li>
+                                <li className={isActive("/mystructure") ? "active" : ""}><Link to="/mylicense"><img src="/images/icons/lic.svg" alt="" /> My license</Link></li>
                                 <li className={isActive("/myprojects") ? "active" : ""}><Link to="/myprojects"><FaProjectDiagram />My Projects</Link></li>
-                                <li className={isActive("/myeducation") ? "active" : ""}><Link to="/myeducation"><FaGraduationCap />My Education</Link></li>
-                                <li className={isActive("/mystructure") ? "active" : ""}><Link to="/mystructure"><FaUserFriends />My Structure</Link></li>
-                                <li className={isActive("/support") ? "active" : ""}><Link to="/support"><MdContactSupport />Support</Link></li>
+                                <li className={isActive("/mystructure") ? "active" : ""}><Link to="/mystructure"><img src="/images/icons/structure.svg" alt="" />My Structure</Link></li>
+                                <li className={isActive("/profile") ? "active" : ""}><Link to="/profile"><img src="/images/icons/profile.svg" alt="" /> Profile</Link></li>
                             </ul>
                         </nav>
                     </>}
@@ -106,6 +106,7 @@ const Layout = () => {
                         :
                         ''}
                     <Outlet />
+                    {/* {account.status === "connected" && <><div className="pageContainer"><span>Insider Club © Copyright 2024. All rights reserved</span></div></>} */}
                 </main>
             </div>
         </>

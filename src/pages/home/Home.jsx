@@ -230,15 +230,19 @@ export default function Home() {
               <h2>Launchpad</h2>
               <div className="launchpad">
                 <table className="content">
-                  <tr>
-                    <td><div><img className='avatar' src="images/temp.png" alt="" /> Values Network</div></td>
-                    <td><div><span className='line'> <span style={{ width: 74.6 + '%' }} className='lineContent'></span> </span> 74.6%</div></td>
-                    <td>$ 60001</td>
-                    <td>$ 0.0288</td>
-                    <td><div className="arrow">
-                      <img src="images/icons/arrow-left.svg" alt="" />
-                    </div></td>
-                  </tr>
+                  <tbody>
+
+                    <tr>
+                      <td><div><img className='avatar' src="images/temp.png" alt="" /> Values Network</div></td>
+                      <td><div><span className='line'> <span style={{ width: 74.6 + '%' }} className='lineContent'></span> </span> 74.6%</div></td>
+                      <td>$ 60001</td>
+                      <td>$ 0.0288</td>
+                      <td><div className="arrow">
+                        <img src="images/icons/arrow-right.svg" alt="" />
+                      </div></td>
+                    </tr>
+
+                  </tbody>
                 </table>
               </div>
 
