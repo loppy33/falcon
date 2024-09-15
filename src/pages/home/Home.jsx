@@ -22,7 +22,7 @@ export default function Home() {
       <div className="noConnected">
 
         <section id='greetings' className='block1'>
-          <video src="images/home/bg/1.mp4" muted autoPlay loop playsInline></video>
+          <video src="/images/home/bg/1.mp4" muted autoPlay loop playsInline></video>
 
           <div className="container">
             <h1 data-aos="fade-up">Low fees, <br /> high perfomance</h1>
@@ -33,16 +33,16 @@ export default function Home() {
         </section>
 
         <div className="bg-1">
-          <video src="images/home/bg/1.mp4" muted autoPlay loop playsInline></video>
+          <video src="/images/home/bg/1.mp4" muted autoPlay loop playsInline></video>
           <section id='about_us' className='block2 home__container'>
             <div className='images'>
               <div>
-                <img data-aos="flip-right" data-aos-duration="1500" src="images/home/ab1.png" alt="" />
-                <img data-aos-duration="3000" src="images/home/ab3.png" alt="" />
+                <img data-aos="flip-right" data-aos-duration="1500" src="/images/home/ab1.png" alt="" />
+                <img data-aos-duration="3000" src="/images/home/ab3.png" alt="" />
               </div>
               <div className='second'>
-                <img data-aos="flip-right" data-aos-duration="1500" src="images/home/ab2.png" alt="" />
-                <img data-aos-duration="3000" src="images/home/ab4.png" alt="" />
+                <img data-aos="flip-right" data-aos-duration="1500" src="/images/home/ab2.png" alt="" />
+                <img data-aos-duration="3000" src="/images/home/ab4.png" alt="" />
               </div>
             </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
               <h3>Embracing the Digital Future</h3>
               <p>We are convinced that blockchain technology and cryptocurrencies hold the potential to revolutionize the global economy. <br /> <br /> Our mission is to connect investors with top opportunities in the digital asset space, while prioritizing security, transparency, and maximizing returns.</p>
             </div>
-            <img src="images/home/mission.png" data-aos="zoom-in" alt="" />
+            <img src="/images/home/mission.png" data-aos="zoom-in" alt="" />
           </section>
 
           <section id='our_services' className='block4 home__container'>
@@ -71,19 +71,19 @@ export default function Home() {
             <div className='services'>
 
               <div className='service' data-aos="zoom-in" data-aos-duration="500">
-                <img src="images/home/ed.png" alt="" />
+                <img src="/images/home/ed.png" alt="" />
                 <h4>Educational Programs</h4>
                 <p>We offer courses and seminars to help you better understand the cryptocurrency market and make informed investment decisions.</p>
               </div>
 
               <div className='service' data-aos="zoom-in" data-aos-duration="1000">
-                <img src="images/home/asset.png" alt="" />
+                <img src="/images/home/asset.png" alt="" />
                 <h4>Asset Management:</h4>
                 <p>Our team of experts will develop personalized crypto asset management strategies, considering your financial goals and risk tolerance.</p>
               </div>
 
               <div className='service' data-aos="zoom-in" data-aos-duration="1500">
-                <img src="images/home/analytic.png" alt="" />
+                <img src="/images/home/analytic.png" alt="" />
                 <h4>Analytics and Research:</h4>
                 <p>We provide in-depth market analysis, so you are always aware of the latest trends and can make timely decisions.</p>
               </div>
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
 
             <div data-aos="fade-right" className='exp'>
-              <img src="images/home/innov.png" alt="" />
+              <img src="/images/home/innov.png" alt="" />
               <div>
                 <h4>Innovative Approaches</h4>
                 <p>We use cutting-edge technologies and methods to ensure the maximum efficiency of your investments.</p>
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
 
             <div data-aos="fade-right" data-aos-duration="1000" className='exp'>
-              <img src="images/home/tran.png" alt="" />
+              <img src="/images/home/tran.png" alt="" />
               <div>
                 <h4>Transparency and Security</h4>
                 <p>We guarantee full transparency of all operations and a high level of protection for your assets.</p>
@@ -126,7 +126,7 @@ export default function Home() {
 
           <section id='join_us' className='block6 home__container'>
             <div className="join" data-aos="zoom-in-up">
-              <video src="images/home/bg/2.webm" muted autoPlay loop playsInline></video>
+              <video src="/images/home/bg/2.webm" muted autoPlay loop playsInline></video>
 
               <div>
                 <h2>Join Us</h2>
@@ -151,22 +151,22 @@ export default function Home() {
 
             <div className='links'>
               <div className='link' data-aos-duration="1000">
-                <img src="images/net/facebook.png" alt="" />
+                <img src="/images/net/facebook.png" alt="" />
                 <span>Facebook</span>
                 <a target="_blank" href="Visit">Visit</a>
               </div>
               <div className='link' data-aos-duration="1500">
-                <img src="images/net/twitter.png" alt="" />
+                <img src="/images/net/twitter.png" alt="" />
                 <span>Twitter</span>
                 <a target="_blank" href="https://x.com/Fenom_project">Visit</a>
               </div>
               <div className='link' >
-                <img src="images/net/youtube.png" alt="" />
+                <img src="/images/net/youtube.png" alt="" />
                 <span>Youtube</span>
                 <a href="Visit">Visit</a>
               </div>
               <div className='link' data-aos-duration="2500">
-                <img src="images/net/telegram.png" alt="" />
+                <img src="/images/net/telegram.png" alt="" />
                 <span>Telegram</span>
                 <a href="Visit">Visit</a>
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
 
                 <div className="content">
                   <div className='title'>
-                    <div><span className='btn__active icon'><img className='icons' src="images/icons/license.svg" alt="" /></span> Your License </div>
+                    <div><span className='btn__active icon'><img className='icons' src="/images/icons/license.svg" alt="" /></span> Your License </div>
                     <span className='not__active'>Not active</span>
                   </div>
                   <div className='info'>
@@ -216,7 +216,7 @@ export default function Home() {
 
                 <div className="content">
                   <div className='title'>
-                    <div><span className='btn__active icon'><img className='icons' src="images/icons/balance.svg" alt="" /></span> Your License </div>
+                    <div><span className='btn__active icon'><img className='icons' src="/images/icons/balance.svg" alt="" /></span> Your License </div>
                   </div>
                   <div className='info'>
                     <div className='balance'> $ 5000 </div>
@@ -233,13 +233,15 @@ export default function Home() {
                   <tbody>
 
                     <tr>
-                      <td><div><img className='avatar' src="images/temp.png" alt="" /> Values Network</div></td>
+                      <td><div><img className='avatar' src="/images/temp.png" alt="" /> Values Network</div></td>
                       <td><div><span className='line'> <span style={{ width: 74.6 + '%' }} className='lineContent'></span> </span> 74.6%</div></td>
                       <td>$ 60001</td>
                       <td>$ 0.0288</td>
-                      <td><div className="arrow">
-                        <img src="images/icons/arrow-right.svg" alt="" />
-                      </div></td>
+                      <td className='arrow__link'>
+                        <Link to='/launchpad/1' className="arrow">
+                          <img src="/images/icons/arrow-right.svg" alt="" />
+                        </Link>
+                      </td>
                     </tr>
 
                   </tbody>
@@ -249,21 +251,21 @@ export default function Home() {
               <h2 className='section__name'>Academy <a className='link' href="">Show More</a></h2>
               <div className='academy'>
                 <a href="#/">
-                  <img src="images/temp.png" alt="" />
+                  <img src="/images/temp.png" alt="" />
                   <div className="content">
                     <div className="info">Portfolio · 05.08.2024</div>
                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
                   </div>
                 </a>
                 <a href="#/">
-                  <img src="images/temp.png" alt="" />
+                  <img src="/images/temp.png" alt="" />
                   <div className="content">
                     <div className="info">Portfolio · 05.08.2024</div>
                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
                   </div>
                 </a>
                 <a href="#/">
-                  <img src="images/temp.png" alt="" />
+                  <img src="/images/temp.png" alt="" />
                   <div className="content">
                     <div className="info">Portfolio · 05.08.2024</div>
                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
@@ -275,22 +277,22 @@ export default function Home() {
               <h2>Our social networks</h2>
               <div className='networks'>
                 <div className='net'>
-                  <img src="images/net/facebook.png" alt="" />
+                  <img src="/images/net/facebook.png" alt="" />
                   <span>Facebook</span>
                   <a className='link' target="_blank" href="Visit">Join now</a>
                 </div>
                 <div className='net'>
-                  <img src="images/net/twitter.png" alt="" />
+                  <img src="/images/net/twitter.png" alt="" />
                   <span>Twitter</span>
                   <a className='link' target="_blank" href="https://x.com/Fenom_project">Join now</a>
                 </div>
                 <div className='net' >
-                  <img src="images/net/youtube.png" alt="" />
+                  <img src="/images/net/youtube.png" alt="" />
                   <span>Youtube</span>
                   <a className='link' href="Visit">Join now</a>
                 </div>
                 <div className='net'>
-                  <img src="images/net/telegram.png" alt="" />
+                  <img src="/images/net/telegram.png" alt="" />
                   <span>Telegram</span>
                   <a className='link' href="Visit">Join now</a>
                 </div>

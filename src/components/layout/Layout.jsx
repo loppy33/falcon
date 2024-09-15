@@ -80,9 +80,10 @@ const Layout = () => {
                             <ul>
                                 <li className={isActive("/") ? "active" : ""}><Link to="/"><img src="/images/icons/home.svg" alt="" /> Home</Link></li>
                                 <li className={isActive("/academy") ? "active" : ""}><Link to="/academy"><img src="/images/icons/academy.svg" alt="" /> Academy</Link></li>
-                                <li className={isActive("/wallets") ? "active" : ""}><Link to="/wallets"><img src="/images/icons/launchpad.svg" alt="" /> Wallets</Link></li>
-                                <li className={isActive("/mystructure") ? "active" : ""}><Link to="/mylicense"><img src="/images/icons/lic.svg" alt="" /> My license</Link></li>
-                                <li className={isActive("/myprojects") ? "active" : ""}><Link to="/myprojects"><FaProjectDiagram />My Projects</Link></li>
+                                {/* <li className={isActive("/wallets") ? "active" : ""}><Link to="/wallets"><img src="/images/icons/launchpad.svg" alt="" /> Wallets</Link></li> */}
+                                <li className={isActive("/launchpad") ? "active" : ""}><Link to="/launchpad"><img src="/images/icons/launchpad.svg" alt="" /> Launchpad</Link></li>
+                                <li className={isActive("/mylicense") ? "active" : ""}><Link to="/mylicense"><img src="/images/icons/lic.svg" alt="" /> My license</Link></li>
+                                {/* <li className={isActive("/myprojects") ? "active" : ""}><Link to="/myprojects"><FaProjectDiagram />My Projects</Link></li> */}
                                 <li className={isActive("/mystructure") ? "active" : ""}><Link to="/mystructure"><img src="/images/icons/structure.svg" alt="" />My Structure</Link></li>
                                 <li className={isActive("/profile") ? "active" : ""}><Link to="/profile"><img src="/images/icons/profile.svg" alt="" /> Profile</Link></li>
                             </ul>

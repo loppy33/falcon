@@ -16,21 +16,21 @@ export default function Academy() {
 
                         <div className='academy'>
                             <Link to="/academy/1">
-                                <img src="images/temp.png" alt="" />
+                                <img src="/images/temp.png" alt="" />
                                 <div className="content">
                                     <div className="info">Portfolio · 05.08.2024</div>
                                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
                                 </div>
                             </Link>
                             <a href="/academy/1">
-                                <img src="images/temp.png" alt="" />
+                                <img src="/images/temp.png" alt="" />
                                 <div className="content">
                                     <div className="info">Portfolio · 05.08.2024</div>
                                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
                                 </div>
                             </a>
                             <Link to="/academy/1">
-                                <img src="images/temp.png" alt="" />
+                                <img src="/images/temp.png" alt="" />
                                 <div className="content">
                                     <div className="info">Portfolio · 05.08.2024</div>
                                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
@@ -42,21 +42,21 @@ export default function Academy() {
 
                         <div className='academy no__available'>
                             <Link to="/detailed/1">
-                                <img src="images/temp.png" alt="" />
+                                <img src="/images/temp.png" alt="" />
                                 <div className="content">
                                     <div className="info">Portfolio · 05.08.2024</div>
                                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
                                 </div>
                             </Link>
                             <a href="/detailed/1">
-                                <img src="images/temp.png" alt="" />
+                                <img src="/images/temp.png" alt="" />
                                 <div className="content">
                                     <div className="info">Portfolio · 05.08.2024</div>
                                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>
                                 </div>
                             </a>
                             <Link to="/detailed/1">
-                                <img src="images/temp.png" alt="" />
+                                <img src="/images/temp.png" alt="" />
                                 <div className="content">
                                     <div className="info">Portfolio · 05.08.2024</div>
                                     <p>Instructions: How to Manage a Portfolio on CoinMarketCap</p>

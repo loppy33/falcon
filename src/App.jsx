@@ -9,6 +9,8 @@ import Profile from "./pages/profile/Profile";
 import Wallets from "./pages/wallets/Wallets";
 import Academy from "./pages/academy/Academy";
 import Detailed from "./pages/academy/Detailed/Detailed";
+import Launchpad from "./pages/launchpad/Launchpad";
+import LaunchpadDetailed from "./pages/launchpad/LaunchpadDetailed/LaunchpadDetailed";
 
 function App() {
 
@@ -20,6 +22,9 @@ function App() {
           <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
 
           <Route path="/wallets" element={<PrivateRoute><Wallets /></PrivateRoute>} />
+          <Route path="/launchpad" element={<PrivateRoute><Launchpad /></PrivateRoute>} />
+          <Route path="/launchpad/:id" element={<PrivateRoute><LaunchpadDetailed /></PrivateRoute>} />
+
 
           <Route path="/academy" element={<PrivateRoute><Academy /></PrivateRoute>} />
           <Route path="/academy/:id" element={<PrivateRoute><Detailed /></PrivateRoute>} />
