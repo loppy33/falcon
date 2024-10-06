@@ -1,83 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap')
 @import 'colors.modules'
 *
-  margin: 0
-  padding: 0
-  box-sizing: border-box
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 
 :root
-  font-family: Nunito Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
-  line-height: 1.5
-  font-weight: 650
+    font-family: Nunito Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+    line-height: 1.5
+    font-weight: 650
 
-  color-scheme: light dark
-  color: $mainColor
-  background-color: $bgColor
+    color-scheme: light dark
+    color: $mainColor
+    background-color: $bgColor
 
-  font-synthesis: none
-  text-rendering: optimizeLegibility
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+    font-synthesis: none
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
 
 body
-  overflow-x: hidden
+    overflow-x: hidden
 
 a
-  font-weight: 500
-  text-decoration: inherit
+    font-weight: 500
+    text-decoration: inherit
 
 h1
-  font-size: 3.2em
-  line-height: 1.1
+    font-size: 3.2em
+    line-height: 1.1
 
 button
-  border-radius: 8px
-  border: 1px solid transparent
-  padding: 0.6em 1.2em
-  font-size: 1em
-  font-weight: 500
-  font-family: inherit
-  background-color: #1a1a1a
-  cursor: pointer
-  transition: border-color 0.25s
+    border-radius: 8px
+    border: 1px solid transparent
+    padding: 0.6em 1.2em
+    font-size: 1em
+    font-weight: 500
+    font-family: inherit
+    background-color: #1a1a1a
+    cursor: pointer
+    transition: border-color 0.25s
 
 button:hover
-  border-color: #646cff
+    border-color: #646cff
 
 button:focus,
 button:focus-visible
-  outline: 4px auto -webkit-focus-ring-color
+    outline: none
 
 .home__container
-  max-width: 70%
-  margin: auto
+    max-width: 70%
+    margin: auto
 
 .pageContainer
-  max-width: 95% 
-  margin: auto
+    max-width: 95%
+    margin: auto
 
 main
-  height: 100vh
-  overflow: scroll
-  overflow-x: hidden
+    height: 100vh
+    overflow: scroll
+    overflow-x: hidden
 
 label
-  font-size: 14px
-  color: #ffffffdc
+    font-size: 14px
+    color: #1d1d1ddc
 
 input
-  font-size: 1.6vh
-  padding: 1vh
-  border: 1px solid #eeeeee50
-  outline: none
-  border-radius: 5px
-  background-color: #1d1d1d
+    font-size: 16px
+
+    outline: none
+    border: none
+    border-radius: 0
+    padding: 19px 24px
+    background-color: transparent
+    color: $mainColor
+    font-weight: 500
+    width: 100%
+
+    &::placeholder
+        color: $grayColor2
 
 ul
-  list-style: none
-
-
+    list-style: none
 
 @media ( max-width: 720px )
-  .home__container
-    max-width: 95%
+    .home__container
+        max-width: 95%

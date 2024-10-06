@@ -1,0 +1,25 @@
+@import '../../styles/colors.modules'
+    
+.Profile
+    .profile__container
+        .info__container
+            display: flex
+            flex-direction: column
+            .info__part
+                display: flex
+                align-items: center
+                width: 100%
+                border-bottom: 1px solid $grayColor
+                padding: 24px 0
+                &:last-child
+                    border: none
+                    padding-bottom: 0
+                .part
+                    width: calc( 100% / 2 )
+
+                    img
+                        width: 42px
+                        height: 42px
+
+                .edit__btn
+                    text-align: right

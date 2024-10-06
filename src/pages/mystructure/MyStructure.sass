@@ -1,125 +1,80 @@
+@import '../../styles/colors.modules'
+
 .MyStructure
+    .user__info
+        gap: 2px
 
-    ul
-        display: flex
-        gap: 10px
-        margin-bottom: 25px
+        .info
+            align-items: center
 
-        li
-            padding: 5px 20px
-            font-size: 14px
-            border-radius: 6px
-            border: 1px solid #3d3d43
-            cursor: pointer
-
-            &.active
-                background-color: #3d3d43
-
-            &:hover
-                background-color: #3d3d43
-
-    .friendsInfo
-        display: flex
-        justify-content: space-between
-        align-items: center
-        gap: 10px
-        div
-            display: flex
-            flex-direction: column
-            border-radius: 10px
-
-            margin-bottom: 10px
-            padding: 20px
-            width: 50%
-            height: 150px
-            background-color: #7975751a
             h3
-                margin-bottom: 10px
+                font-size: 32px
 
-            p
-                margin-bottom: 10px
+        .invited
+            display: flex
+            gap: 20px
+            text-align: right
+
+        .mentor
+            display: flex
+            align-items: center
+            gap: 16px
+
+            h3
+                font-size: 18px
+            h4
+                font-size: 16px
+
+    .affiliateLink
+        h2
+            margin-bottom: 12px
+
+        p
+            margin-bottom: 24px
+
+        .links
+            display: flex
+            align-items: center
+            gap: 20px
+
+            .net
+                width: 16%
                 display: flex
                 justify-content: space-between
-                color: #eeeeee88
+
+            .action__input
+                width: 85%
+                display: flex
+                align-items: center
+                justify-content: space-between
+
+                p
+                    margin-bottom: 0
+
                 span
-                    margin-right: 40%
-                    color: #ffffffe3
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    cursor: pointer
 
     .search
         display: flex
         align-items: center
-        background-color: #7975751a
-        padding: 20px
-        border-radius: 10px
-        margin-bottom: 30px
 
-        span
-            flex: 1
+        border-bottom: 1px solid $grayColor
+        padding-bottom: 24px
+        margin-bottom: 24px
 
-        .inputBar
-            position: relative
-            flex: 2
-            margin-right: 10px
-            svg
-                position: absolute
-                top: 50%
-                transform: translateY(-50%)
-                left: 1%
-                font-size: 26px
-            input
+    .launchpad
+        .star
+            width: 20px
+            height: 20px
+
+        .friend
+            .friend__name
+                display: flex
+                flex-direction: column
+                gap: 0
+                text-align: left
                 font-size: 14px
-                width: 100%
-                padding: 10px 35px
-
-        button
-            font-size: 14px
-            padding: 10px 30px
-
-    .friendsList
-        .userInfo
-            display: flex
-            justify-content: space-between
-            background-color: #7975751a
-            padding: 20px
-            border-radius: 10px
-            margin-bottom: 15px
-
-            div
-                display: flex
-                justify-content: space-between
-                width: 80%
-
-        ul
-            display: flex
-            flex-direction: column
-            li
-                display: flex
-                justify-content: space-between
-                align-items: center
-                width: 100%
-                background-color: #7975751a
-                padding: 20px
-                border-radius: 10px
-
-                .user
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-
-                    img
-                        width: 40px
-                        margin-bottom: 10px
-
-                .info
-                    display: flex
-                    justify-content: space-between
-                    align-items: center 
-                    width: 80%
-
-                    a
-                        border: 1px solid #ffffff86
-                        padding: 10px 25px
-                        border-radius: 10px
-                    
-                    svg
-                        font-size: 12px
+                align-items: flex-start

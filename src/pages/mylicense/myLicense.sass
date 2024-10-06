@@ -1,0 +1,54 @@
+@import '../../styles/colors.modules'
+    
+.MyLicense
+    .licenses
+        display: flex
+        flex-wrap: wrap
+        gap: 20px
+        .content
+            width: calc( 50% - 10px )
+
+            .title
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 24px
+
+                h3
+                    font-weight: 800
+                    font-size: 20px
+
+                p
+                    font-size: 16px
+
+                img
+                    width: 62px
+                    height: 62px
+
+            .list
+                padding-bottom: 24px
+                border-bottom: 2px solid $grayColor
+
+                ul
+                    li
+                        display: flex
+                        align-items: center
+                        gap: 16px
+                        font-size: 14px
+                        margin-bottom: 16px
+
+                        img
+                            width: 16px
+                            height: 16px
+
+                .link
+                    margin-left: 32px
+                    font-size: 14px
+
+            .price
+                text-align: center
+
+                h3
+                    font-size: 24px
+                    font-weight: 600
+                    padding: 24px 0

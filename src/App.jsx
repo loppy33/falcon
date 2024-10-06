@@ -11,6 +11,7 @@ import Academy from "./pages/academy/Academy";
 import Detailed from "./pages/academy/Detailed/Detailed";
 import Launchpad from "./pages/launchpad/Launchpad";
 import LaunchpadDetailed from "./pages/launchpad/LaunchpadDetailed/LaunchpadDetailed";
+import MyLicense from "./pages/mylicense/MyLicense";
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
 
           <Route path="/academy" element={<PrivateRoute><Academy /></PrivateRoute>} />
           <Route path="/academy/:id" element={<PrivateRoute><Detailed /></PrivateRoute>} />
-
+          
+          <Route path="/mylicense" element={<PrivateRoute><MyLicense /></PrivateRoute>} />
           <Route path="/mystructure" element={<PrivateRoute><MyStructure /></PrivateRoute>} />
 
           <Route path="*" element={<NoPage />} />

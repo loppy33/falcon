@@ -18,33 +18,13 @@ const Layout = () => {
 
     const [menu, setMenu] = useState(false);
 
-    useEffect(() => {
-        console.log(menu);
 
-    }, [menu])
-
-    const isActive = (path) => location.pathname === path;
-
-    // const getPageName = (pathname) => {
-    //     switch (pathname) {
-    //         case "/":
-    //             return "Home";
-    //         case "/profile":
-    //             return "Profile";
-    //         case "/myprojects":
-    //             return "My Projects";
-    //         case "/myeducation":
-    //             return "My Education";
-    //         case "/mystructure":
-    //             return "My Structure";
-    //         case "/wallets":
-    //             return "Wallets";
-    //         case "/support":
-    //             return "Support";
-    //         default:
-    //             return "Home";
-    //     }
-    // };
+    const isActive = (path) => {
+        if (path === "/") {
+            return location.pathname === "/";
+        }
+        return location.pathname.includes(path);
+    };
 
     return (
         <>
@@ -54,7 +34,7 @@ const Layout = () => {
                     <>
                         <header className={menu ? 'active' : null}>
                             <div className="home__container">
-                                <a href="#greetings"><img src="images/icons/logo.svg" alt="" /></a>
+                                <a href="#greetings"><img src="/images/icons/logo.svg" alt="" /></a>
                                 <nav>
                                     <ul>
                                         <li><a onClick={() => setMenu(false)} href="#about_us">About Us</a></li>
@@ -96,7 +76,7 @@ const Layout = () => {
                                 <div className="pageContainer">
                                     {/* <span>{getPageName(location.pathname)}</span> */}
                                     <Link className="btn__active" to="/wallets"><img className="icons" src="images/icons/wallet.svg" alt="" />Wallet</Link>
-                                    
+
                                     <div>
                                         <img className="icons" src="images/icons/lang.svg" alt="" />
                                         <w3m-button />

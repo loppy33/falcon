@@ -2,18 +2,12 @@ import { useAccount } from 'wagmi'
 import './connected.sass'
 import './noConnected.sass'
 import './noConnectedPhone.sass'
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+
+
 export default function Home() {
 
   const account = useAccount()
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
 
   const noConnected = () => {
 
@@ -25,9 +19,9 @@ export default function Home() {
           <video src="/images/home/bg/1.mp4" muted autoPlay loop playsInline></video>
 
           <div className="container">
-            <h1 data-aos="fade-up">Low fees, <br /> high perfomance</h1>
-            <p data-aos="fade-up" data-aos-duration="1500" className='main__p'>Join the New Era of VC Investing in High-Quality Early-Stage Projects. <br /> Become a Member of Our Community</p>
-            <button data-aos="fade-up" data-aos-duration="3000" className='main__button'>Start Investing</button>
+            <h1>Low fees, <br /> high perfomance</h1>
+            <p className='main__p'>Join the New Era of VC Investing in High-Quality Early-Stage Projects. <br /> Become a Member of Our Community</p>
+            <button className='main__button'>Start Investing</button>
           </div>
 
         </section>
@@ -37,12 +31,12 @@ export default function Home() {
           <section id='about_us' className='block2 home__container'>
             <div className='images'>
               <div>
-                <img data-aos="flip-right" data-aos-duration="1500" src="/images/home/ab1.png" alt="" />
-                <img data-aos-duration="3000" src="/images/home/ab3.png" alt="" />
+                <img data-aos="flip-right" src="/images/home/ab1.png" alt="" />
+                <img src="/images/home/ab3.png" alt="" />
               </div>
               <div className='second'>
-                <img data-aos="flip-right" data-aos-duration="1500" src="/images/home/ab2.png" alt="" />
-                <img data-aos-duration="3000" src="/images/home/ab4.png" alt="" />
+                <img data-aos="flip-right" src="/images/home/ab2.png" alt="" />
+                <img src="/images/home/ab4.png" alt="" />
               </div>
             </div>
 
@@ -60,7 +54,7 @@ export default function Home() {
               <h3>Embracing the Digital Future</h3>
               <p>We are convinced that blockchain technology and cryptocurrencies hold the potential to revolutionize the global economy. <br /> <br /> Our mission is to connect investors with top opportunities in the digital asset space, while prioritizing security, transparency, and maximizing returns.</p>
             </div>
-            <img src="/images/home/mission.png" data-aos="zoom-in" alt="" />
+            <img src="/images/home/mission.png" alt="" />
           </section>
 
           <section id='our_services' className='block4 home__container'>
@@ -70,19 +64,19 @@ export default function Home() {
             </div>
             <div className='services'>
 
-              <div className='service' data-aos="zoom-in" data-aos-duration="500">
+              <div className='service' data-aos-duration="500">
                 <img src="/images/home/ed.png" alt="" />
                 <h4>Educational Programs</h4>
                 <p>We offer courses and seminars to help you better understand the cryptocurrency market and make informed investment decisions.</p>
               </div>
 
-              <div className='service' data-aos="zoom-in" data-aos-duration="1000">
+              <div className='service' data-aos-duration="1000">
                 <img src="/images/home/asset.png" alt="" />
                 <h4>Asset Management:</h4>
                 <p>Our team of experts will develop personalized crypto asset management strategies, considering your financial goals and risk tolerance.</p>
               </div>
 
-              <div className='service' data-aos="zoom-in" data-aos-duration="1500">
+              <div className='service'>
                 <img src="/images/home/analytic.png" alt="" />
                 <h4>Analytics and Research:</h4>
                 <p>We provide in-depth market analysis, so you are always aware of the latest trends and can make timely decisions.</p>
@@ -141,11 +135,11 @@ export default function Home() {
 
             <h2>Join & Follow the Community</h2>
             <form action="post">
-              <div data-aos="zoom-in">
+              <div>
                 <input type="text" placeholder='Name' />
                 <input type="email" placeholder='E-Mail' />
               </div>
-              <textarea data-aos="zoom-in" name="Message" id="message" placeholder='Message' rows={6}></textarea>
+              <textarea name="Message" id="message" placeholder='Message' rows={6}></textarea>
               <button className='action__button'>Send</button>
             </form>
 
@@ -155,7 +149,7 @@ export default function Home() {
                 <span>Facebook</span>
                 <a target="_blank" href="Visit">Visit</a>
               </div>
-              <div className='link' data-aos-duration="1500">
+              <div className='link'>
                 <img src="/images/net/twitter.png" alt="" />
                 <span>Twitter</span>
                 <a target="_blank" href="https://x.com/Fenom_project">Visit</a>
