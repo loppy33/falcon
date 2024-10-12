@@ -70,7 +70,7 @@ export default function Academy() {
             case 'Open access':
                 return (
                     <>
-                        <h2 className='section__name'>{filter} <div className='sort__content'>All project <img src="images/icons/arrow-down.svg" alt="" /></div></h2>
+                        <h2 className='section__name'>{filter} <div className='sort__content filter'>All project <img src="images/icons/arrow-down.svg" alt="" /></div></h2>
                     </>
                 )
         }
