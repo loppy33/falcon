@@ -25,33 +25,17 @@ const Layout = () => {
     };
 
     useEffect(() => {
-        let scrollPosition = 0;
-
         if (menu) {
-            // Сохраняем текущее положение прокрутки
-            scrollPosition = window.pageYOffset;
-
-            // Фиксируем страницу в этом положении
-            document.body.style.position = 'fixed';
-            document.body.style.top = `-${scrollPosition}px`;
             document.body.style.overflow = 'hidden';
-            document.body.style.width = '100%'; // Для предотвращения смещения контента
         } else {
-            // Восстанавливаем положение прокрутки
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.overflow = '';
-            window.scrollTo(0, scrollPosition); // Возвращаем пользователя на прежнюю позицию
+            document.body.style.overflow = 'auto';
         }
 
-        // Очищаем при размонтировании компонента
         return () => {
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.overflow = '';
-            window.scrollTo(0, scrollPosition); // Вернуть позицию скролла
+            document.body.style.overflow = 'auto';
         };
     }, [menu]);
+
     return (
         <>
             <div className="Layout" style={account.status !== "connected" ? { flexDirection: "column" } : {}}>
