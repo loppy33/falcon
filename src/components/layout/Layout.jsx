@@ -24,6 +24,21 @@ const Layout = () => {
         }
     };
 
+    useEffect(() => {
+        if (menu) {
+            // Отключить прокрутку
+            document.body.style.overflow = 'hidden';
+        } else {
+            // Включить прокрутку обратно
+            document.body.style.overflow = 'auto';
+        }
+
+        // Вернуть скролл обратно при размонтировании компонента (на всякий случай)
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [menu]);
+
     return (
         <>
             <div className="Layout" style={account.status !== "connected" ? { flexDirection: "column" } : {}}>
