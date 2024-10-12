@@ -1,4 +1,5 @@
 import './MyStructure.sass'
+import './MyStructurePhone.sass'
 
 export default function MyStructure() {
 
@@ -16,7 +17,7 @@ export default function MyStructure() {
             <h2 className='section__name'>My structure<div className='sort__content'><img className='icons' src="/images/icons/period.svg" alt="" /> All period <img src="images/icons/arrow-down.svg" alt="" /></div></h2>
             <div className="user__info">
 
-                <div className="content">
+                <div className="content us">
                     <div className='title'>
                         <div><img className='icons' src="/images/icons/personal.svg" alt="" />Personal</div>
                     </div>
@@ -35,7 +36,7 @@ export default function MyStructure() {
                     </div>
                 </div>
 
-                <div className="content">
+                <div className="content us">
                     <div className='title'>
                         <div><img className='icons' src="/images/icons/structure2.svg" alt="" /> In Structure</div>
                     </div>

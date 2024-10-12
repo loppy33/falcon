@@ -1,5 +1,5 @@
 @import '../../styles/colors.modules'
-    
+
 .MyLicense
     .licenses
         display: flex
@@ -52,3 +52,13 @@
                     font-size: 24px
                     font-weight: 600
                     padding: 24px 0
+
+@media ( max-width: 720px )
+
+    .MyLicense
+        .licenses
+            display: flex
+            flex-wrap: wrap
+            gap: 20px
+            .content
+                width: 100%

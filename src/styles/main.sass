@@ -81,9 +81,7 @@ h2
         div
             display: flex
             align-items: center
-            flex-direction: column-reverse
             gap: 10px
-            align-items: flex-end
         span
             font-size: 10px
 
@@ -140,8 +138,6 @@ h2
     margin-bottom: 24px
 
 .launchpad
-    overflow: scroll
-    overflow-x: scroll
     .content
         width: 100%
         text-align: left
@@ -213,6 +209,16 @@ h2
                     display: flex
                     align-items: center
                     gap: 20px
+
+@media ( max-width: 720px )
+    .launchpad
+
+        table
+            overflow: scroll
+            overflow-x: scroll
+
+            tr
+                min-width: 1000px
 
 .choice
     display: inline-flex
@@ -323,6 +329,27 @@ h2
                 span
                     display: block
                     margin: 10px 0
+
+@media ( max-width: 720px )
+    .modal
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+
+        backdrop-filter: blur(10px)
+        background-color: $modalBgColor
+
+        .content
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 95%
+            max-width: 620px
+        
+
 
 .sold
     display: flex

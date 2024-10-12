@@ -1,0 +1,88 @@
+@import '../../styles/colors.modules'
+
+@media ( max-width: 720px )
+    .MyStructure
+        .user__info
+            gap: 2px
+            .us
+                margin-bottom: 0
+            .info
+                align-items: center
+
+                h3
+                    font-size: 32px
+
+            .invited
+                display: flex
+                gap: 20px
+                text-align: right
+
+            .mentor
+                display: flex
+                align-items: center
+                gap: 16px
+
+                h3
+                    font-size: 18px
+                h4
+                    font-size: 16px
+
+        .affiliateLink
+            h2
+                margin-bottom: 12px
+
+            p
+                margin-bottom: 24px
+
+            .links
+                display: flex
+                align-items: center
+                flex-direction: column
+                gap: 20px
+
+                .net
+                    width: 16%
+                    display: flex
+                    width: 60%
+                    justify-content: space-between
+
+                .action__input
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+
+                    p
+                        margin-bottom: 0
+                        width: 63%
+                        word-wrap: break-word
+
+                    span
+                        width: 35%
+                        display: flex
+                        align-items: center
+                        gap: 10px
+                        cursor: pointer
+                        white-space: nowrap
+
+        .search
+            display: flex
+            align-items: center
+
+            border-bottom: 1px solid $grayColor
+            padding-bottom: 24px
+            margin-bottom: 24px
+
+        .launchpad
+            .star
+                width: 20px
+                height: 20px
+
+            .friend
+                .friend__name
+                    display: flex
+                    flex-direction: column
+                    gap: 0
+                    text-align: left
+                    font-size: 14px
+                    align-items: flex-start

@@ -132,13 +132,15 @@ export default function Profile() {
                 <div className="info__container">
                     {Object.keys(userInfo).map((field) => (
                         <div className="info__part" key={field}>
-                            <div className="part">{fieldNames[field]}</div>
-                            <div className="part">
-                                {field === 'photo' ? (
-                                    <img src={userInfo.photo} alt="Profile" className="avatar" />
-                                ) : (
-                                    userInfo[field]
-                                )}
+                            <div className="two__part">
+                                <div className="part">{fieldNames[field]}</div>
+                                <div className="part">
+                                    {field === 'photo' ? (
+                                        <img src={userInfo.photo} alt="Profile" className="avatar" />
+                                    ) : (
+                                        userInfo[field]
+                                    )}
+                                </div>
                             </div>
                             <button className='edit__btn' onClick={() => handleEditClick(field)}>
                                 <img className='icons' src="/images/icons/edit.svg" alt="" /> Edit
@@ -148,7 +150,6 @@ export default function Profile() {
                 </div>
             </div>
 
-            {/* Render custom modal when editing */}
             {isModalOpen && modalEdit()}
         </div>
     );
