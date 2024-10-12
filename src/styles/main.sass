@@ -70,6 +70,23 @@ h2
             width: 16px
             height: 16px
 
+@media ( max-width: 720px )
+
+    .section__name
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        div
+            display: flex
+            align-items: center
+            flex-direction: column-reverse
+            gap: 10px
+            align-items: flex-end
+        span
+            font-size: 10px
+
 .academy
     display: flex
     flex-wrap: wrap
@@ -103,6 +120,10 @@ h2
                 color: $mainColor
                 font-size: 16px
 
+@media ( max-width: 720px )
+    .academy
+        gap: 20px
+
 .date
     font-size: 14px
     color: $secondColor
@@ -119,6 +140,8 @@ h2
     margin-bottom: 24px
 
 .launchpad
+    overflow: scroll
+    overflow-x: scroll
     .content
         width: 100%
         text-align: left
@@ -154,10 +177,11 @@ h2
         .arrow__link
             width: 40px
     table
-        width: 100%
         display: flex
         flex-direction: column
         gap: 30px
+        width: 100%
+
         .avatar
             width: 42px
             height: 42px

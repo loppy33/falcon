@@ -12,7 +12,7 @@ export default function MyStructure() {
     }
 
     return (
-        <div className="MyStructure pageContainer">
+        <div className="MyStructure pageContainer pgf">
             <h2 className='section__name'>My structure<div className='sort__content'><img className='icons' src="/images/icons/period.svg" alt="" /> All period <img src="images/icons/arrow-down.svg" alt="" /></div></h2>
             <div className="user__info">
 

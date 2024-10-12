@@ -43,7 +43,7 @@ export default function MyLicense() {
     }
 
     return (
-        <div className="MyLicense pageContainer">
+        <div className="MyLicense pageContainer pgf">
             {modalConfirmPayment()}
             <h2>My License</h2>
             <div className="licenses">

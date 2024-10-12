@@ -162,7 +162,7 @@ export default function Launchpad() {
     }
 
     return (
-        <div className="Launchpad pageContainer">
+        <div className="Launchpad pageContainer pgf">
             <h2 className='section__name'>Launchpad
                 <ul className='choice'>
                     <li onClick={() => setFilter('Current projects')} className={filter === 'Current projects' && 'active'}><img className='icon' src="/images/icons/current.svg" alt="" /> Current projects</li>

@@ -122,7 +122,7 @@ export default function Profile() {
     };
 
     return (
-        <div className="Profile pageContainer">
+        <div className="Profile pageContainer pgf">
             <h2>Profile</h2>
             <div className="profile__container content">
                 <div className='title bold'>

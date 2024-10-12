@@ -2,6 +2,7 @@ import { useAccount } from 'wagmi'
 import './connected.sass'
 import './noConnected.sass'
 import './noConnectedPhone.sass'
+import './connectedPhone.sass'
 import { Link } from 'react-router-dom';
 
 
@@ -192,7 +193,7 @@ export default function Home() {
           </>
           :
           <>
-            <div className="pageContainer">
+            <div className="pageContainer pgf">
               <div className="user__info">
 
                 <div className="content">

@@ -1,0 +1,62 @@
+@import '../../styles/colors.modules'
+
+@media ( max-width: 720px )
+    .pageContainer
+        .user__info
+            display: flex
+            flex-direction: column
+            gap: 5px
+
+            .content
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                gap: 20px
+
+                .title
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    div
+                        display: flex
+                        align-items: center
+                        gap: 10px
+
+                .info
+                    display: flex
+                    justify-content: space-between
+
+                    .balance
+                        font-size: 24px
+        
+
+        
+        .networks
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-bottom: 24px
+            gap: 10px
+
+            .net
+                background: $bgContentColor
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 15px 22px
+                gap:  10px
+                width: calc( 100% / 2 - 1.5vw )
+
+                img
+                    width: 42px
+                    height: 42px
+
+                    span
+                        font-size: 16px
+
+                    a
+                        font-size: 14px
+                        color: #26BDFE
+                        border-bottom: 1px solid #26BDFE

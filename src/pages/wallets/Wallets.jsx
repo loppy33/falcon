@@ -59,7 +59,7 @@ export default function Wallets() {
 
   return (
     <div className="Profile">
-      <div className="pageContainer">
+      <div className="pageContainer pgf">
         <ul>
           <li className={activeTab === 'wallets' ? 'active' : ''} onClick={() => setActiveTab('wallets')}>Wallets</li>
           <li className={activeTab === 'replenish' ? 'active' : ''} onClick={() => setActiveTab('replenish')}>Replenish</li>

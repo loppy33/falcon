@@ -36,7 +36,7 @@ export default function LaunchpadDetailed() {
     }
 
     return (
-        <div className="LaunchpadDetailed pageContainer">
+        <div className="LaunchpadDetailed pageContainer pgf">
             <Link className='back__button' to="/launchpad/"><img src="/images/icons/arrow-left.svg" alt="" />Project Values Network</Link>
             <div className="pageContent">
                 <div className="project__info">

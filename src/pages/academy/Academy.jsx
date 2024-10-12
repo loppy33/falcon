@@ -77,7 +77,7 @@ export default function Academy() {
     }
 
     return (
-        <div className="Academy pageContainer">
+        <div className="Academy pageContainer pgf">
             <h2>Academy</h2>
             <ul>
                 <li onClick={() => setFilter('All')} className={filter === "All" ? "btn__active" : null}>All</li>

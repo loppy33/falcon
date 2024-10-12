@@ -3,7 +3,7 @@ import './Detailed.sass'
 
 export default function Detailed() {
     return (
-        <div className="Detailed pageContainer">
+        <div className="Detailed pageContainer pgf">
             <Link className='back__button' to="/academy/"><img src="/images/icons/arrow-left.svg" alt="" />Academy</Link>
             <div className="pageContent">
                 <div className="main_video">
