@@ -127,7 +127,7 @@
 
     .sidebar
         transition: .3s
-        position: absolute
+        position: fixed
         bottom: 0
         left: 0
         z-index: 100
@@ -138,6 +138,7 @@
 
         .title
             display: none
+            
 
     .user
         position: fixed
@@ -148,6 +149,9 @@
         backdrop-filter: blur(24px)
         display: flex
         align-items: center
+
+        .pageContainer
+            width: 100%
 
         .lang__and__acc
             flex-direction: row-reverse

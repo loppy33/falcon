@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useAccount } from 'wagmi'
 
 import Layout from "./components/layout/Layout";
@@ -12,11 +12,13 @@ import Detailed from "./pages/academy/Detailed/Detailed";
 import Launchpad from "./pages/launchpad/Launchpad";
 import LaunchpadDetailed from "./pages/launchpad/LaunchpadDetailed/LaunchpadDetailed";
 import MyLicense from "./pages/mylicense/MyLicense";
+import { useEffect } from "react";
 
 function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -29,7 +31,7 @@ function App() {
 
           <Route path="/academy" element={<PrivateRoute><Academy /></PrivateRoute>} />
           <Route path="/academy/:id" element={<PrivateRoute><Detailed /></PrivateRoute>} />
-          
+
           <Route path="/mylicense" element={<PrivateRoute><MyLicense /></PrivateRoute>} />
           <Route path="/mystructure" element={<PrivateRoute><MyStructure /></PrivateRoute>} />
 
@@ -46,3 +48,13 @@ const PrivateRoute = ({ children }) => {
 };
 
 export default App
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
