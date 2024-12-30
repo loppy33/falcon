@@ -1,5 +1,6 @@
 .noConnected
     color: #fff
+    overflow: hidden
     .main__button
         padding: 1.2vw 3vw
         background: linear-gradient(128deg, rgba(62,208,255,1) 0%, rgba(124,245,255,1) 58%, rgba(98,232,251,1) 100%)
@@ -78,6 +79,7 @@
             z-index: -1
             transform: scale(1.2)
             height: 100vh
+            width: 100vw
 
     .bg-1
         position: relative
@@ -104,6 +106,7 @@
 
     .bg-2
         background-color: #000
+        width: 100vw
 
     .block2
         display: flex
@@ -191,6 +194,8 @@
 
         .title
             margin-bottom: 1.5vw
+            display: flex
+            flex-direction: column
 
         .exp
             background: linear-gradient(90deg, rgba(27,24,24,1) 0%, rgba(34,34,34,1) 100%)
@@ -244,7 +249,7 @@
         text-align: center
         display: flex
         flex-direction: column
-        gap: 3.5vw
+        gap: 3vw
 
         form
             input, textarea
@@ -305,6 +310,8 @@
             display: flex
             justify-content: space-between
             font-size: .7vw
+            // height: 10vh
+            background: #000
             .links
                 display: flex
                 gap: 2.5vw

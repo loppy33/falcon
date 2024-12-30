@@ -204,7 +204,7 @@ export default function Home() {
                   <div className='info'>
                     <div><span className='second'>Limit</span> $ 0 </div>
                     <div>
-                      <Link className='link' to="/wallets">Pay now</Link>
+                      <Link className='link' to="/mylicense">Pay now</Link>
                     </div>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ export default function Home() {
                   <div className='info'>
                     <div className='balance'> $ 5000 </div>
                     <div>
-                      <Link className='link' to="/wallets">Top up now</Link>
+                      <Link className='link' to="/">Top up now</Link>
                     </div>
                   </div>
                 </div>
