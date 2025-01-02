@@ -34,7 +34,7 @@ class User extends Model {
         type: DataType.STRING,
         allowNull: true,
     })
-    public lastname?: string;
+    public lastName?: string;
 
     @Column({
         type: DataType.STRING,
@@ -54,6 +54,30 @@ class User extends Model {
         allowNull: true,
     })
     public photo?: string;
+    
+    @Column({
+        type: DataType.STRING,
+        allowNull: true,
+    })
+    public EVMwalletAdress!: string;
+    
+    @Column({
+        type: DataType.STRING,
+        allowNull: true,
+    })
+    public SOLwalletAdress!: string;
+
+    @Column({
+        type: DataType.STRING,
+        allowNull: true,
+    })
+    public TORwalletAdress!: string;
+
+    @Column({
+        type: DataType.INTEGER,
+        allowNull: true,
+    })
+    public referrer?: number; // ID реферера
 }
 
 export default User;

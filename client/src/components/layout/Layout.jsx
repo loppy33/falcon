@@ -3,6 +3,8 @@ import './Layout.sass';
 import './phone.sass';
 import { useAccount } from 'wagmi';
 import { useEffect, useState } from "react";
+import userAPI from "../../http/userAPI";
+
 
 const Layout = () => {
     const account = useAccount();
@@ -16,6 +18,52 @@ const Layout = () => {
         }
         return location.pathname.includes(path);
     };
+
+    const getRefFromUrl = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('ref');
+    };
+
+    const sendAddressToServer = async (address, ref) => {
+        try {
+            console.log('send post');
+
+            const response = await userAPI.createUser(
+                address, // Прямо передаем только адрес кошелька, без вложенности
+                ref, // отправляем ref, если он есть
+            );
+            console.log(response);
+
+            if (response.status === 200) {
+                console.log('Address and ref sent successfully');
+                localStorage.setItem('userId', response.data.id);
+                console.log('User ID saved to localStorage:', response.data.id);
+
+                // const userId = localStorage.getItem('userId');
+                // if (userId) {
+                //     console.log('User ID retrieved from localStorage:', userId);
+                //     return userId;
+                // }
+            } else {
+                console.error('Failed to send address and ref');
+            }
+        } catch (error) {
+            console.error('Error sending address and ref to server', error);
+        }
+    };
+
+    useEffect(() => {
+        console.log(account.status, account.address);
+
+        if (account.status === 'connected' && account.address) {
+
+            const ref = getRefFromUrl(); // Получаем ref из URL
+            console.log('func');
+
+            sendAddressToServer(account.address, ref); // Отправляем данные на сервер
+        }
+    }, [account.status, account.data]);
+
 
     const handleLinkClick = () => {
         // Закрываем меню только на мобильных устройствах
@@ -99,7 +147,7 @@ const Layout = () => {
                                         : {}
                                 }>
                                 <div className="pageContainer">
-                                    <Link className="btn__active wallets" to="/wallets"><img className="icons" src="images/icons/wallet.svg" alt="" />Wallet</Link>
+                                    <Link className="btn__active wallets" to="/profile"><img className="icons" src="images/icons/wallet.svg" alt="" />Wallets</Link>
                                     <div className="lang__and__acc">
                                         <img className="icons lang" src="images/icons/lang.svg" alt="" />
                                         <w3m-button />
